@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signo Inmobiliario</title>
+    <link rel="stylesheet" href="../src/estilos.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+</head>
+
+<body class="bg-gray-100 font-body">
+
+
+    <div class="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+        <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+            <div class="p-4 flex flex-row items-center justify-between">
+                <a href="#" class="mr-6 w-24 md:w-36"> <img src="../images/logo.png" alt=""></a>
+                <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+                <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                    <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                    <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            </div>
+            <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+                <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg  md:mt-0 hover:text-blue-900  hover:bg-gray-200 " href="index.html">Inicio</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg  md:mt-0 md:ml-4 hover:text-blue-900  hover:bg-gray-200 " href="services.html">Servicios</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg  md:mt-0 md:ml-4 hover:text-blue-900  hover:bg-gray-200 " href="clients.html">Clientes</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg  md:mt-0 md:ml-4 hover:text-blue-900  hover:bg-gray-200 " href="plans.html">Planes y Precios</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg  md:mt-0 md:ml-4 hover:text-blue-900  hover:bg-gray-200 " href="contact.html">Contacto</a>
+
+            </nav>
+        </div>
+    </div>
+    <div class="bg-blue-500">
+        <img class="h-52 md:h-auto object-cover object-right" src="../images/header.jpg" alt="">
+    </div>
+    <div class="">
+        <div class="pt-8 md:pt-24">
+            <div class=" text-center my-4">
+
+                <h1 class="font-bold text-4xl md:text-5xl text-black">
+                    Lo que tu inmobioliaria necesita
+                </h1>
+                <p class="text-sm pt-3 tracking-widest text-black">Somos un estudio de diseño y programacion con mas de 10 años de experiencia en el rubro inmobiliario.</p>
+            </div>
+
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-3 ">
+
+                <div class="p-2 sm:p-10 text-center cursor-pointer">
+                    <div class="py-8 max-w-sm rounded overflow-hidden shadow-lg hover:bg-white transition duration-500  bg-white">
+                        <div class="space-y-4">
+                            <img class="m-auto h-36" src="../images/servicios-sitioweb-2.png" alt="">
+
+                            <div class="px-6 py-4">
+                                <div class="space-y-5">
+                                    <div class="font-bold text-xl mb-2">Pagina Web Inmobiliaria </div>
+                                    <p class="text-gray-700 text-base">
+                                        Sitios Web especializados y fácilmente administrable
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-2 sm:p-10 text-center cursor-pointer">
+                    <div class="py-8 max-w-sm rounded overflow-hidden shadow-lg hover:bg-white transition duration-500  bg-white">
+                        <div class="space-y-4">
+                            <img class="m-auto h-36" src="../images/servicios-gestion-2.png" alt="">
+
+                            <div class="px-6 py-4">
+                                <div class="space-y-5">
+                                    <div class="font-bold text-xl mb-2">Gestión Inmobiliaria
+                                    </div>
+                                    <p class="text-gray-700 text-base">
+                                        Sistema para controlar y publicar inmuebles
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="p-2 sm:p-10 text-center cursor-pointer">
+                    <div class="py-8 max-w-sm rounded overflow-hidden shadow-lg hover:bg-white transition duration-500  bg-white">
+                        <div class="space-y-4">
+                            <img class="m-auto h-36" src="../images/servicios-marketing-2.png" alt="">
+
+                            <div class="px-6 py-4">
+                                <div class="space-y-5">
+                                    <div class="font-bold text-xl mb-2">Marketing Inmobiliario
+                                    </div>
+                                    <p class="text-gray-700 text-base">
+                                        Publicita tus propiedades por correo, portales y redes sociales
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="p-2 sm:p-10 text-center cursor-pointer">
+                    <div class="py-8 max-w-sm rounded overflow-hidden shadow-lg hover:bg-white transition duration-500  bg-white">
+                        <div class="space-y-4">
+                            <img class="m-auto h-36" src="../images/servicios-diseño-2.png" alt="">
+
+                            <div class="px-6 py-4">
+                                <div class="space-y-5">
+                                    <div class="font-bold text-xl mb-2">Diseño Profesional
+                                    </div>
+                                    <p class="text-gray-700 text-base">
+                                        Sitios web funcionales, que aporten soluciones de diseño
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="p-2 sm:p-10 text-center cursor-pointer">
+                    <div class="py-8 max-w-sm rounded overflow-hidden shadow-lg hover:bg-white transition duration-500  bg-white">
+                        <div class="space-y-4">
+                            <img class="m-auto h-36" src="../images/servicios-estadisticas-2.png" alt="">
+
+                            <div class="px-6 py-4">
+                                <div class="space-y-5">
+                                    <div class="font-bold text-xl mb-2">Estadísticas y reportes
+                                    </div>
+                                    <p class="text-gray-700 text-base">
+                                        Seguimiento completo del estado de tu negocio
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="p-2 sm:p-10 text-center cursor-pointer">
+                    <div class="py-8 max-w-sm rounded overflow-hidden shadow-lg hover:bg-white transition duration-500  bg-white">
+                        <div class="space-y-4">
+                            <img class="m-auto h-36" src="../images/servicios-seguridad-2.png" alt="">
+
+                            <div class="px-6 py-4">
+                                <div class="space-y-5">
+                                    <div class="font-bold text-xl mb-2">Seguridad
+                                    </div>
+                                    <p class="text-gray-700 text-base">
+                                        Usamos lo último en tecnología para la seguridad de tu información
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+    <div class="bg-blue-900 -mt-56 h-full">
+        <div class="grid grid-cols-1 md:grid-cols-4 text-center pt-64 mt-4 text-white ">
+
+            <h1 class="col-span-4 font-bold text-4xl md:text-5xl  ">
+                Nuestras Estadisticas
+            </h1>
+
+            <div class="col-start-1 py-16">
+                <h1 class="font-bold text-6xl mb-4">136+</h1>
+                <p>Clientes satisfechos</p>
+            </div>
+
+            <div class=" col-start-1 md:col-start-2 py-16">
+                <h1 class="font-bold text-6xl mb-4">14</h1>
+                <p>Proyectos Actuales</p>
+            </div>
+            <div class="col-start-1 md:col-start-3 py-16">
+                <h1 class="font-bold text-6xl mb-4">+70</h1>
+                <p>Webs Online</p>
+            </div>
+            <div class="col-start-1 md:col-start-4 py-16">
+                <h1 class="font-bold text-6xl mb-4">13</h1>
+                <p>Años de Trayectoria</p>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="bg-fixed py-36 flex justify-center bg-no-repeat bg-cover" style="background-image: url(../images/tarjeta.jpg)">
+        <div class="inline-flex ">
+            <a href="services.html"> <button class="bg-transparent hover:bg-yellow-500 text-white font-semibold text-2xl hover:text-white py-2 px-4 border border-white hover:border-transparent rounded-l">
+            Servicios
+        </button></a>
+            <a href="contact.html"> <button class="bg-transparent hover:bg-yellow-500  text-2xl text-white font-semibold hover:text-white py-2 px-4 border border-white hover:border-transparent rounded-r">
+            Contacto
+        </button></a>
+        </div>
+    </div>
+    <div class="bg-white  md:bg-gradient-to-b from-blue-500 to-white">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+
+                <div class="col-start-2 flex items-center min-h-screen dark:bg-gray-900 ">
+                    <div class="">
+                        <div class="my-14 bg-white p-5 rounded-md shadow-sm">
+                            <div class="text-center">
+                                <h1 class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">Contactanos</h1>
+                                <p class="text-gray-400 dark:text-gray-400">Completa el formulario y nos pondremos en contacto</p>
+                            </div>
+                            <div class="m-7">
+                                <form action="https://api.web3forms.com/submit" method="POST" id="form">
+
+                                    <input type="hidden" name="apikey" value="YOUR_ACCESS_KEY_HERE">
+                                    <input type="hidden" name="subject" value="New Submission from Web3Forms">
+                                    <input type="checkbox" name="botcheck" id="" style="display: none;">
+
+
+                                    <div class="mb-6">
+                                        <label for="name" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Nombre</label>
+                                        <input type="text" name="name" id="name" placeholder="Carlos Gomez" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+                                        />
+                                    </div>
+                                    <div class="mb-6">
+                                        <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email</label>
+                                        <input type="email" name="email" id="email" placeholder="tumail@gmail.com" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+                                        />
+                                    </div>
+
+                                    <div class="mb-6">
+                                        <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Mensaje</label>
+
+                                        <textarea rows="5" name="message" id="message" placeholder="Escribí tu mensaje..." class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+                                            required></textarea>
+                                    </div>
+                                    <div class="mb-6">
+                                        <button type="submit" class="w-full px-3 py-4 text-white bg-yellow-500 rounded-md focus:bg-yellow-600 focus:outline-none">Enviar</button>
+                                    </div>
+                                    <p class="text-base text-center text-gray-400" id="result">
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-white dark:bg-gray-800 ">
+        <div class="container px-6 py-4 mx-auto">
+            <div class="lg:flex">
+                <div class="flex w-full -mx-6 lg:w-2/5">
+                    <div class="px-6">
+                        <div class="flex items-center">
+                            <a class="" href="#"><img class="object-contain lg:object-scale-down  w-full h-28 mt-1" src="../images/logo.png" alt="Signo Inmobiliario"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-6 lg:mt-0 lg:flex-1">
+                    <div class="grid grid-cols-2 gap-6 sm:grid-cols-3 ">
+
+                        <div>
+                            <a href="index.html" class="block mt-2 p-1 text-sm font-semibold text-gray-900 rounded-lg dark-mode:bg-gray-700  md:mt-0 hover:text-blue-900  hover:bg-gray-200 ">Inicio</a>
+                            <a href="services.html" class="block mt-2 p-1  text-sm font-semibold text-gray-900 rounded-lg dark-mode:bg-gray-700  md:mt-0 hover:text-blue-900  hover:bg-gray-200 ">Servicios</a>
+                            <a href="clients.html" class="block mt-2 p-1  text-sm font-semibold text-gray-900 rounded-lg dark-mode:bg-gray-700  md:mt-0 hover:text-blue-900  hover:bg-gray-200 ">Clientes</a>
+                            <a href="plans.html" class="block mt-2 p-1  text-sm font-semibold text-gray-900 rounded-lg dark-mode:bg-gray-700  md:mt-0 hover:text-blue-900  hover:bg-gray-200 ">Planes y Precios</a>
+                            <a href="contact.html" class="block mt-2 p-1  text-sm font-semibold text-gray-900 rounded-lg dark-mode:bg-gray-700  md:mt-0 hover:text-blue-900  hover:bg-gray-200 ">Contacto</a>
+
+                        </div>
+
+                        <div class="text-md font-semibold text-gray-700">
+                            Trabajo Final <br> Computación Gráfica V <br> ISEC <br> 2021
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <hr class="h-px my-6 bg-gray-300 border-none dark:bg-gray-700">
+            <div>
+                <p class="text-center text-gray-800 dark:text-white">© Camila Leone</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const form = document.getElementById('form');
+        const result = document.getElementById('result');
+
+        form.addEventListener('submit', function(e) {
+            const formData = new FormData(form);
+            e.preventDefault();
+            var object = {};
+            formData.forEach((value, key) => {
+                object[key] = value
+            });
+            var json = JSON.stringify(object);
+            result.innerHTML = "Please wait..."
+
+            fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Accept': 'application/json'
+                    },
+                    body: json
+                })
+                .then(async(response) => {
+                    let json = await response.json();
+                    if (response.status == 200) {
+                        result.innerHTML = json.message;
+                        result.classList.remove('text-gray-500');
+                        result.classList.add('text-green-500');
+                    } else {
+                        console.log(response);
+                        result.innerHTML = json.message;
+                        result.classList.remove('text-gray-500');
+                        result.classList.add('text-red-500');
+                    }
+                })
+                .catch(error => {
+                    console.log(error);
+                    result.innerHTML = "Something went wrong!";
+                })
+                .then(function() {
+                    form.reset();
+                    setTimeout(() => {
+                        result.style.display = "none";
+                    }, 5000);
+                });
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://kit.fontawesome.com/9da2cf56c8.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

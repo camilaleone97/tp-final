@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Signo Inmobiliario</title>
+    <link rel="stylesheet" href="../src/estilos.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+
+</head>
+
+<body class="bg-gray-100 font-body">
+
+    <div class="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+        <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+            <div class="p-4 flex flex-row items-center justify-between">
+                <a href="#" class="mr-6 w-24 md:w-36"> <img src="../images/logo.png" alt=""></a>
+                <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
+                <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                    <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                    <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            </div>
+            <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
+                <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg  md:mt-0 hover:text-blue-900  hover:bg-gray-200 " href="index.html">Inicio</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg  md:mt-0 md:ml-4 hover:text-blue-900  hover:bg-gray-200 " href="services.html">Servicios</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg  md:mt-0 md:ml-4 hover:text-blue-900  hover:bg-gray-200 " href="clients.html">Clientes</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg  md:mt-0 md:ml-4 hover:text-blue-900  hover:bg-gray-200 " href="plans.html">Planes y Precios</a>
+                <a class="px-4 py-2 mt-2 text-sm font-semibold rounded-lg  md:mt-0 md:ml-4 hover:text-blue-900  hover:bg-gray-200 " href="contact.html">Contacto</a>
+
+            </nav>
+        </div>
+    </div>
+    <div class="bg-white">
+        <img class="h-60 md:h-auto object-cover object-left" src="../images/services-banner.jpg" alt="">
+    </div>
+    <div class="bg-white p-6 md:p-12">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 ">
+                <img class="object-cover object-center" src="../images/services-sistema.png" alt="">
+                <div class="col-start-1 md:col-start-2 text-gray-600 w-5/6 text-left md:text-justify place-self-center">
+                    <h1 class="font-bold text-3xl mb-4">Software Inmobiliario</h1>
+                    <p>Desde Signo Inmobiliario ofrecemos un sistema de gestión exclusivamente para inmobiliarias donde podrás gestionar tu negocio de forma fácil y rápida. Desde la oferta de inmuebles, clientes, propietarios hasta las publicaciones para
+                        portales, redes y tu sitio web.
+                    </p>
+                    <ul class="list-disc list-inside m-2">
+                        <li> Gestión de propietarios y clientes</li>
+                        <li>Compatible desde tu movil o tablet </li>
+                        <li>Posibilidad de publicación en portales </li>
+                        <li>Carga de fotos y videos</li>
+                        <li>Buscador de inmuebles</li>
+                        <li>Actualizaciones y soporte técnico </li>
+                        <li>Geoposicionamiento de inmuebles </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gray-100 p-6 md:p-12">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 ">
+                <div class="col-start-1 text-gray-600 w-5/6 text-left md:text-justify place-self-center">
+                    <h1 class="font-bold text-3xl mb-4">Sitio Web</h1>
+                    <p>Diseñamos sitios web funcionales, 100% único pensado para su imagen como empresa. Usamos lo ultimo en tecnología SEO y diseño web para que tu sitio de posicione fácilmente entre las primeras búsquedas de Google.
+                    </p>
+                    <ul class="list-disc list-inside m-2">
+                        <li> Diseño responsive, compatible para tablets y celulares </li>
+                        <li>Buscador de inmuebles con filtros de busqueda
+                        </li>
+                        <li>Ubicacion en Google maps</li>
+                        <li>Fotos ilimitadas por propiedad</li>
+                        <li>Videos de Youtube</li>
+                        <li>Estado de la propiedad (reservado, vendido, alquilado, etc.)</li>
+                        <li>Actualizaciones y soporte técnico </li>
+                    </ul>
+                </div>
+                <img class="col-start-1 md:col-start-2 row-start-1 object-cover object-center" src="../images/services-sitio.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white p-6 md:p-12">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 ">
+                <img class="object-cover object-center" src="../images/services-marketing.png" alt="">
+                <div class="col-start-1 md:col-start-2 text-gray-600 w-5/6 text-left md:text-justify place-self-center">
+                    <h1 class="font-bold text-3xl mb-4">Marketing Digital</h1>
+                    <p>Desde Signo Inmobiliario te damos todas las herramientas que necesitas para que tu inmobiliaria se de a conocer y atraer clientes.</p>
+                    <ul class="list-disc list-inside m-2">
+                        <li>Enviá anuncios a portales inmobiliario desde el Sistema o Sitio</li>
+                        <li>Realiza cadena de mails publicitarios</li>
+                        <li>Conecta tus publicaciones de inmuebles con tus redes sociales </li>
+                        <li>Envia publicaciones por whatsapp</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-gray-100 p-6 md:p-12">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 ">
+                <div class="col-start-1 text-gray-600 w-5/6 text-left md:text-justify place-self-center">
+                    <h1 class="font-bold text-3xl mb-4">Estadisticas y Reportes</h1>
+                    <p>Mantenete al tanto del estado de tus inmuebles y hace tu propio estu dio del mercado con nuestras estadisticas que sacamos de las visitas mensuales.
+                    </p>
+                    <ul class="list-disc list-inside m-2">
+                        <li>Propiedades mas visitadas</li>
+                        <li>Tipo de propiedades y zonas mas buscadas
+                        </li>
+                        <li>Propiedades con menos visitas</li>
+                    </ul>
+                </div>
+                <img class="col-start-1 md:col-start-2 row-start-1 object-cover object-center" src="../images/services-estadisticas.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white p-6 md:p-12">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 ">
+                <img class="object-cover object-center" src="../images/services-seguridad.png" alt="">
+                <div class="col-start-1 md:col-start-2 text-gray-600 w-5/6 text-left md:text-justify place-self-center">
+                    <h1 class="font-bold text-3xl mb-4">Seguridad</h1>
+                    <p> Nuestro principal compromiso es hacerte sentir seguro con nuestro servicios. Por eso cuidamos tu informacion y tus archivos para que esten siempre disponibles en internet.
+                    </p>
+                    <ul class="list-disc list-inside m-2">
+                        <li>Copias de seguridad mensuales </li>
+                        <li>Mantenimiento </li>
+                        <li>Pago de hosting y dominio </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-white dark:bg-gray-800 ">
+        <div class="container px-6 py-4 mx-auto">
+            <div class="lg:flex">
+                <div class="flex w-full -mx-6 lg:w-2/5">
+                    <div class="px-6">
+                        <div class="flex items-center">
+                            <a class="" href="#"><img class="object-contain lg:object-scale-down  w-full h-28 mt-1" src="../images/logo.png" alt="Signo Inmobiliario"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-6 lg:mt-0 lg:flex-1">
+                    <div class="grid grid-cols-2 gap-6 sm:grid-cols-3 ">
+
+                        <div>
+                            <a href="index.html" class="block mt-2 p-1 text-sm font-semibold text-gray-900 rounded-lg dark-mode:bg-gray-700  md:mt-0 hover:text-blue-900  hover:bg-gray-200 ">Inicio</a>
+                            <a href="services.html" class="block mt-2 p-1  text-sm font-semibold text-gray-900 rounded-lg dark-mode:bg-gray-700  md:mt-0 hover:text-blue-900  hover:bg-gray-200 ">Servicios</a>
+                            <a href="clients.html" class="block mt-2 p-1  text-sm font-semibold text-gray-900 rounded-lg dark-mode:bg-gray-700  md:mt-0 hover:text-blue-900  hover:bg-gray-200 ">Clientes</a>
+                            <a href="plans.html" class="block mt-2 p-1  text-sm font-semibold text-gray-900 rounded-lg dark-mode:bg-gray-700  md:mt-0 hover:text-blue-900  hover:bg-gray-200 ">Planes y Precios</a>
+                            <a href="contact.html" class="block mt-2 p-1  text-sm font-semibold text-gray-900 rounded-lg dark-mode:bg-gray-700  md:mt-0 hover:text-blue-900  hover:bg-gray-200 ">Contacto</a>
+
+                        </div>
+
+                        <div class="text-md font-semibold text-gray-700">
+                            Trabajo Final <br> Computación Gráfica V <br> ISEC <br> 2021
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="h-px my-6 bg-gray-300 border-none dark:bg-gray-700">
+
+            <div>
+                <p class="text-center text-gray-800 dark:text-white">© Camila Leone</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://kit.fontawesome.com/9da2cf56c8.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

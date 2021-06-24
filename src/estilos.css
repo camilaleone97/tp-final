@@ -1,0 +1,27 @@
+
+
+.white-icon {
+  color: white;
+}
+
+.scroll-hidden::-webkit-scrollbar {
+    height: 0px;
+    background: transparent;
+    /* make scrollbar transparent */
+}
+
+.bg-header {
+  background-image: url("../images/bg-header.jpg") ;
+   background-repeat: no-repeat;
+  background-position: top center;
+  height: 100%; 
+  background-size: cover;
+}
+
+.bg-plans {
+  background-image: url("../images/olitas.jpg") ;
+   background-repeat: no-repeat;
+  background-position: top center;
+  width: 100%; 
+  background-size: cover;
+}
